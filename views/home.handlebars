@@ -49,12 +49,11 @@
             class="fa fa-paperclip"></i></a>
       </li>
       <li>
-        <a class="waves-effect waves-light btn-floating social. linkedin"
+        <a class="waves-effect waves-light btn-floating social linkedin"
           href="https://www.linkedin.com/in/kanwar-b-18682b1/" target="_blank"><i class="fa fa-linkedin"></i></a>
       </li>
       <li>
-        <a class="waves-effect waves-light btn-floating social medium"><i class="fa fa-medium"
-            href="https://medium.com/@kanwarb" target="_blank"></i></a>
+        <a href="https://medium.com/@kanwarb"   target="_blank" class="waves-effect waves-light btn-floating social medium"><i class="fa fa-medium"></i></a>
       </li>
       <li>
         <a class="waves-effect waves-light btn-floating social github" href="https://github.com/kanwarb"
@@ -202,7 +201,7 @@
   </ul>
 </div>
 
-<div id="portfolio" class="container blue-card z-depth-3 p-3">
+<div id="contact" class="container blue-card z-depth-3 p-3">
   <h4 class="change-font">Contact (Reach me @: 408-000-0000) or Send a message below</h4> 
 </div>
 <div id="about" class="container blue-card z-depth-3 p-3">
@@ -218,7 +217,7 @@
           <i class="material-icons prefix">message</i>
           <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Message</label>
-          <button class="btn waves-effect waves-light btn-small float-right">
+          <button id="btnmsg" class="btn waves-effect waves-light btn-small float-right">
             <i class="material-icons">send</i>
           </button>
         </div>
@@ -238,10 +237,10 @@
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
+  {{!-- document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, options);
-  });
+  }); --}}
 
   // Or with jQuery
 
@@ -253,5 +252,10 @@
     $('.sidenav').sidenav();
   });
 
+$(document).ready(function(){
+     $("#btnmsg").on("click", function(){
+       alert("Message has been set to Kanwar");
+     });
+});
 
 </script>
