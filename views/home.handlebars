@@ -6,9 +6,9 @@
 <link rel="stylesheet" href="css/materialize-social.css">
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
+<nav id="top">
+  <div class="nav-wrapper mobile">
+    <a href="#top" class="brand-logo">Kanwar Batra</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="#about">About Me</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -16,6 +16,22 @@
     </ul>
   </div>
 </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="images/kanwar1.jpg"></a>
+      <a href="#name"><span class="white-text name">About Me</span></a>
+    </div></li>
+    <li><a href="#about"><i class="material-icons">cloud</i>About me</a></li>
+    <li><a href="#portfolio"><i class="material-icons">cloud</i>Portfolio</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"></a></li>
+    <li><a class="waves-effect" href="#contact"><i class="material-icons">cloud</i>Send Email</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
 <div id="container" class=" container ">
   <div class="fixed-action-btn click-to-toggle ">
@@ -46,12 +62,12 @@
 
 <div id="about" class="container blue-card z-depth-3 p-3">
 
-    <div class="col s4">
-      <h2 class="change-font" style="color:darkgoldenrod">Kanwar Batra</h2>
-      <p>
+  <div class="col s4">
+    <h2 class="change-font" style="color:darkgoldenrod">Kanwar Batra</h2>
+    <p>
 
-      </p>
-    </div>
+    </p>
+  </div>
 
   <div class="col s8 m7">
     <div class="card horizontal">
@@ -67,25 +83,27 @@
             workloads from on premise to public cloud platform with much more enhanced security setup than
             was on their existing physical infrastructure. Drive the process from POC to Production
           </p>
+
           <p>
             Built Multiple Region and Multi Site Private Cloud using Openstack (Mirantis, Ubuntu) and AWS in US ,
-            Ireland
-            and Singapore.Created strategy for
-            secure backups and at rest data encryption for system in a fully cloud based system.
+            Ireland and Singapore.Created strategy for secure backups and at rest data encryption for system in a fully
+            cloud based system.
+            <br>
+          </p>
+          <p>
 
           </p>
-
           <p>
             My other achievements include designing cloud infrastructure for large scale organizations and help them
-            with
-            their transformation
-            jourey
+            with their transformation jourey
           </p>
+          <p>
 
+          </p>
           <p>
             In my free time I like to dabble in playing with raspberry pai hardware creating all kinds of things like
-            remote controlled
-            cars and drones that can fly within the confines of my house. I also enjoy traveling so every year try to go
+            remote controlled cars and drones that can fly within the confines of my house. I also enjoy traveling so
+            every year try to go
             on a vacation
           </p>
           <p>
@@ -99,25 +117,36 @@
     </div>
   </div>
 </div>
+<div id="portfolio" class="container blue-card z-depth-3 p-3">
+  <h2 class="change-font" style="color:darkgoldenrod">Projects</h2>
+  </div>
+  <div id="portfolio" class="container blue-card z-depth-3 p-3">
+
+  <ul class="collapsible popout">
+    <li class="active">
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Flawless - An app that lets people find
+        suitable meeting places</div>
+      <div class="collapsible-body">
+        <span>
+          <a href="https://kanwarb.github.io/Flawless/" target="_blank"><img src="images/flawless.PNG"
+              class="card-img image-fluid rounded" alt="Project GifTastic"></a>
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>GifTastic, An Great way to view Gif's of
+        any thing on the giftastic site</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+</div>
 <div id="portfolio" class="container blue-card z-depth-3">
-      <h2 class="change-font" style="color:darkgoldenrod">Portfolio</h2>
- </div>
-<div id="portfolio" class="container blue-card z-depth-3">
+
   <div class="row" id="deployed">
-    <div class="col-md-4 col-sm-6 col-xs-12 mt-3">
-      <a href="https://kanwarb.github.io/Flawless/" target="_blank"><img src="images/flawless.PNG"
-          class="card-img image-fluid rounded" alt="Project GifTastic"></a>
-      <div class="card bg-transparent">
-        <h5 class="card-title text-bottom text-black" style="border: none">Project flawless</h5>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12 mt-3">
-      <a href="https://kanwarb.github.io/GifTastic/" target="_blank"><img src="images/giftastic.PNG"
-          class="card-img image-fluid rounded" alt="Project GifTastic"></a>
-      <div class="card bg-transparent">
-        <h5 class="card-title text-bottom text-black" style="border: none">Project Giftastic</h5>
-      </div>
-    </div>
     <div class="col-md-4 col-sm-6 col-xs-12 mt-3">
       <a href="https://kanwarb.github.io/trainTime/" target="_blank"><img src="images/traintime.PNG"
           class="card-img image-fluid rounded" alt="Project GifTastic"></a>
@@ -163,4 +192,21 @@
       hoverEnabled: true
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function () {
+    $('.collapsible').collapsible();
+  });
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        
+
 </script>
